@@ -1,0 +1,14 @@
+{
+  "tag_vocab": {
+    "idx_to_token": [
+      "<pad>",
+      "B",
+      "E",
+      "S",
+      "M"
+    ],
+    "pad_token": "<pad>",
+    "unk_token": null,
+    "mutable": false
+  }
+}

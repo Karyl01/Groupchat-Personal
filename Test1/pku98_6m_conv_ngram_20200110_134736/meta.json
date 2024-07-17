@@ -1,0 +1,4 @@
+{
+  "class_path": "hanlp.components.tok.NgramConvTokenizer",
+  "hanlp_version": "2.0.0-alpha.13"
+}

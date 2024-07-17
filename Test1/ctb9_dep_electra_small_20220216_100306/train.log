@@ -1,0 +1,186 @@
+{
+  "average_subword": true,
+  "average_subwords": false,
+  "batch_size": null,
+  "classpath": "hanlp.components.parsers.biaffine.biaffine_dep.BiaffineDependencyParser",
+  "decay": 0.75,
+  "decay_steps": 5000,
+  "embed_dropout": 0.33,
+  "encoder_lr": 0.0001,
+  "epochs": 30,
+  "epsilon": 1e-12,
+  "feat": null,
+  "finetune": false,
+  "grad_norm": 1.0,
+  "gradient_accumulation": 2,
+  "hanlp_version": "2.1.0-beta.15",
+  "hidden_dropout": 0.33,
+  "layer_dropout": 0,
+  "lowercase": false,
+  "lr": 0.001,
+  "max_sequence_length": 512,
+  "min_freq": 2,
+  "mlp_dropout": 0.33,
+  "mu": 0.9,
+  "n_embed": 100,
+  "n_lstm_hidden": 400,
+  "n_lstm_layers": 3,
+  "n_mlp_arc": 500,
+  "n_mlp_rel": 100,
+  "nu": 0.9,
+  "patience": 100,
+  "pretrained_embed": null,
+  "proj": true,
+  "punct": true,
+  "sampler_builder": {
+    "classpath": "hanlp.common.dataset.SortingSamplerBuilder",
+    "use_effective_tokens": false,
+    "batch_max_tokens": null,
+    "batch_size": 32
+  },
+  "scalar_mix": null,
+  "secondary_encoder": null,
+  "seed": 1644964061,
+  "separate_optimizer": false,
+  "transform": {
+    "classpath": "hanlp.common.transform.NormalizeCharacter",
+    "dst": "token",
+    "src": "token",
+    "mapper": "https://file.hankcs.com/hanlp/utils/char_table_20210602_202632.json.zip"
+  },
+  "transformer": "hfl/chinese-electra-180g-small-discriminator",
+  "transformer_hidden_dropout": null,
+  "transformer_lr": 5e-05,
+  "tree": true,
+  "unk": "<unk>",
+  "warmup_steps": 0.1,
+  "weight_decay": 0,
+  "word_dropout": 0.1
+}
+rel[46] = ['nn', 'conj', 'cc', 'nsubj', 'root', 'dep', 'punct', 'lobj', 'loc', 'comod', 'asp', 'rcmod', 'etc', 'dobj', 'cpm', 'nummod', 'clf', 'assmod', 'assm', 'amod', 'top', 'attr', 'advmod', 'tmod', 'neg', 'prep', 'pobj', 'cop', 'dvpmod', 'dvpm', 'lccomp', 'plmod', 'det', 'pass', 'ordmod', 'pccomp', 'range', 'ccomp', 'xsubj', 'mmod', 'prnmod', 'rcomp', 'vmod', 'prtmod', 'ba', 'nsubjpass']
+Model built with 13308722/13308722 trainable/total parameters.
+Using GPUs: [0]
+120275/11805 samples in trn/dev set.
+Epoch 1 / 30:
+3759/3759 loss: 2.0928 UAS: 45.34% LAS: 35.00% ET: 23 m 49 s
+  738/738 loss: 2.7505 UAS: 51.51% LAS: 42.64% ET: 2 m 0 s
+25 m 48 s / 12 h 54 m 11 s ETA: 12 h 28 m 23 s (saved)
+Epoch 2 / 30:
+3759/3759 loss: 1.1923 UAS: 70.95% LAS: 61.57% ET: 22 m 54 s
+  738/738 loss: 2.6617 UAS: 51.91% LAS: 44.72% ET: 1 m 59 s
+50 m 41 s / 12 h 40 m 17 s ETA: 11 h 49 m 36 s (saved)
+Epoch 3 / 30:
+3759/3759 loss: 1.0369 UAS: 75.14% LAS: 66.82% ET: 22 m 43 s
+  738/738 loss: 3.0428 UAS: 55.80% LAS: 48.41% ET: 2 m 2 s
+1 h 15 m 27 s / 12 h 34 m 25 s ETA: 11 h 18 m 59 s (saved)
+Epoch 4 / 30:
+3759/3759 loss: 0.9580 UAS: 76.85% LAS: 69.01% ET: 22 m 21 s
+  738/738 loss: 2.1749 UAS: 61.11% LAS: 55.44% ET: 1 m 58 s
+1 h 39 m 46 s / 12 h 28 m 13 s ETA: 10 h 48 m 27 s (saved)
+Epoch 5 / 30:
+3759/3759 loss: 0.8891 UAS: 78.37% LAS: 70.90% ET: 22 m 12 s
+  738/738 loss: 1.6977 UAS: 63.91% LAS: 58.91% ET: 2 m 0 s
+2 h 3 m 58 s / 12 h 23 m 47 s ETA: 10 h 19 m 49 s (saved)
+Epoch 6 / 30:
+3759/3759 loss: 0.8415 UAS: 79.34% LAS: 72.14% ET: 22 m 18 s
+  738/738 loss: 1.4990 UAS: 70.31% LAS: 63.97% ET: 1 m 58 s
+2 h 28 m 14 s / 12 h 21 m 10 s ETA: 9 h 52 m 56 s (saved)
+Epoch 7 / 30:
+3759/3759 loss: 0.8002 UAS: 80.39% LAS: 73.37% ET: 21 m 58 s
+  738/738 loss: 1.2405 UAS: 75.30% LAS: 69.95% ET: 1 m 57 s
+2 h 52 m 10 s / 12 h 17 m 50 s ETA: 9 h 25 m 40 s (saved)
+Epoch 8 / 30:
+3759/3759 loss: 0.7681 UAS: 81.18% LAS: 74.36% ET: 22 m 6 s
+  738/738 loss: 1.1932 UAS: 77.46% LAS: 72.09% ET: 1 m 58 s
+3 h 16 m 14 s / 12 h 15 m 52 s ETA: 8 h 59 m 38 s (saved)
+Epoch 9 / 30:
+3759/3759 loss: 0.7448 UAS: 81.72% LAS: 74.95% ET: 21 m 56 s
+  738/738 loss: 1.1213 UAS: 80.30% LAS: 74.81% ET: 1 m 55 s
+3 h 40 m 5 s / 12 h 13 m 38 s ETA: 8 h 33 m 33 s (saved)
+Epoch 10 / 30:
+3759/3759 loss: 0.7220 UAS: 82.38% LAS: 75.76% ET: 21 m 51 s
+  738/738 loss: 0.9723 UAS: 81.86% LAS: 76.64% ET: 1 m 54 s
+4 h 3 m 51 s / 12 h 11 m 32 s ETA: 8 h 7 m 41 s (saved)
+Epoch 11 / 30:
+3759/3759 loss: 0.7019 UAS: 82.82% LAS: 76.26% ET: 21 m 51 s
+  738/738 loss: 0.8919 UAS: 82.64% LAS: 77.35% ET: 1 m 53 s
+4 h 27 m 35 s / 12 h 9 m 46 s ETA: 7 h 42 m 11 s (saved)
+Epoch 12 / 30:
+3759/3759 loss: 0.6872 UAS: 83.19% LAS: 76.69% ET: 21 m 42 s
+  738/738 loss: 0.8205 UAS: 83.60% LAS: 78.64% ET: 1 m 53 s
+4 h 51 m 10 s / 12 h 7 m 55 s ETA: 7 h 16 m 45 s (saved)
+Epoch 13 / 30:
+3759/3759 loss: 0.6724 UAS: 83.52% LAS: 77.11% ET: 21 m 44 s
+  738/738 loss: 0.8700 UAS: 84.18% LAS: 79.08% ET: 1 m 53 s
+5 h 14 m 47 s / 12 h 6 m 26 s ETA: 6 h 51 m 39 s (saved)
+Epoch 14 / 30:
+3759/3759 loss: 0.6567 UAS: 83.87% LAS: 77.55% ET: 21 m 39 s
+  738/738 loss: 0.7249 UAS: 84.51% LAS: 79.64% ET: 1 m 49 s
+5 h 38 m 16 s / 12 h 4 m 52 s ETA: 6 h 26 m 36 s (saved)
+Epoch 15 / 30:
+3759/3759 loss: 0.6432 UAS: 84.24% LAS: 77.96% ET: 21 m 40 s
+  738/738 loss: 0.7032 UAS: 85.46% LAS: 80.61% ET: 1 m 51 s
+6 h 1 m 47 s / 12 h 3 m 34 s ETA: 6 h 1 m 47 s (saved)
+Epoch 16 / 30:
+3759/3759 loss: 0.6310 UAS: 84.50% LAS: 78.29% ET: 21 m 43 s
+  738/738 loss: 0.7466 UAS: 85.54% LAS: 80.96% ET: 1 m 48 s
+6 h 25 m 19 s / 12 h 2 m 27 s ETA: 5 h 37 m 9 s (saved)
+Epoch 17 / 30:
+3759/3759 loss: 0.6191 UAS: 84.79% LAS: 78.60% ET: 21 m 27 s
+  738/738 loss: 0.6869 UAS: 85.71% LAS: 80.85% ET: 1 m 49 s
+6 h 48 m 36 s / 12 h 1 m 3 s ETA: 5 h 12 m 27 s (1)
+Epoch 18 / 30:
+3759/3759 loss: 0.6103 UAS: 85.03% LAS: 78.91% ET: 21 m 30 s
+  738/738 loss: 0.6769 UAS: 86.24% LAS: 81.60% ET: 1 m 43 s
+7 h 11 m 48 s / 11 h 59 m 40 s ETA: 4 h 47 m 52 s (saved)
+Epoch 19 / 30:
+3759/3759 loss: 0.5995 UAS: 85.23% LAS: 79.16% ET: 21 m 38 s
+  738/738 loss: 0.6724 UAS: 86.23% LAS: 81.74% ET: 1 m 46 s
+7 h 35 m 12 s / 11 h 58 m 45 s ETA: 4 h 23 m 32 s (saved)
+Epoch 20 / 30:
+3759/3759 loss: 0.5914 UAS: 85.43% LAS: 79.39% ET: 21 m 26 s
+  738/738 loss: 0.6394 UAS: 86.43% LAS: 82.04% ET: 1 m 45 s
+7 h 58 m 23 s / 11 h 57 m 35 s ETA: 3 h 59 m 12 s (saved)
+Epoch 21 / 30:
+3759/3759 loss: 0.5795 UAS: 85.69% LAS: 79.70% ET: 21 m 26 s
+  738/738 loss: 0.6363 UAS: 86.60% LAS: 82.29% ET: 1 m 43 s
+8 h 21 m 33 s / 11 h 56 m 30 s ETA: 3 h 34 m 57 s (saved)
+Epoch 22 / 30:
+3759/3759 loss: 0.5723 UAS: 85.88% LAS: 79.97% ET: 21 m 25 s
+  738/738 loss: 0.6257 UAS: 86.75% LAS: 82.31% ET: 1 m 43 s
+8 h 44 m 40 s / 11 h 55 m 28 s ETA: 3 h 10 m 47 s (saved)
+Epoch 23 / 30:
+3759/3759 loss: 0.5659 UAS: 86.06% LAS: 80.16% ET: 21 m 24 s
+  738/738 loss: 0.6498 UAS: 87.00% LAS: 82.75% ET: 1 m 41 s
+9 h 7 m 46 s / 11 h 54 m 28 s ETA: 2 h 46 m 43 s (saved)
+Epoch 24 / 30:
+3759/3759 loss: 0.5552 UAS: 86.29% LAS: 80.42% ET: 21 m 26 s
+  738/738 loss: 0.6070 UAS: 87.13% LAS: 82.69% ET: 1 m 41 s
+9 h 30 m 53 s / 11 h 53 m 36 s ETA: 2 h 22 m 43 s (1)
+Epoch 25 / 30:
+3759/3759 loss: 0.5525 UAS: 86.31% LAS: 80.48% ET: 21 m 23 s
+  738/738 loss: 0.6344 UAS: 87.14% LAS: 82.80% ET: 1 m 41 s
+9 h 53 m 57 s / 11 h 52 m 44 s ETA: 1 h 58 m 47 s (saved)
+Epoch 26 / 30:
+3759/3759 loss: 0.5485 UAS: 86.48% LAS: 80.64% ET: 21 m 26 s
+  738/738 loss: 0.5982 UAS: 87.34% LAS: 83.12% ET: 1 m 41 s
+10 h 17 m 3 s / 11 h 51 m 59 s ETA: 1 h 34 m 56 s (saved)
+Epoch 27 / 30:
+3759/3759 loss: 0.5401 UAS: 86.64% LAS: 80.85% ET: 21 m 18 s
+  738/738 loss: 0.6031 UAS: 87.38% LAS: 83.21% ET: 1 m 39 s
+10 h 40 m 1 s / 11 h 51 m 8 s ETA: 1 h 11 m 7 s (saved)
+Epoch 28 / 30:
+3759/3759 loss: 0.5370 UAS: 86.77% LAS: 80.98% ET: 21 m 19 s
+  738/738 loss: 0.5853 UAS: 87.48% LAS: 83.30% ET: 1 m 39 s
+11 h 3 m 0 s / 11 h 50 m 21 s ETA: 47 m 21 s (saved)
+Epoch 29 / 30:
+3759/3759 loss: 0.5320 UAS: 86.83% LAS: 81.08% ET: 21 m 20 s
+  738/738 loss: 0.5707 UAS: 87.54% LAS: 83.39% ET: 1 m 38 s
+11 h 25 m 58 s / 11 h 49 m 37 s ETA: 23 m 39 s (saved)
+Epoch 30 / 30:
+3759/3759 loss: 0.5307 UAS: 86.83% LAS: 81.10% ET: 21 m 18 s
+  738/738 loss: 0.5597 UAS: 87.68% LAS: 83.54% ET: 1 m 36 s
+11 h 48 m 52 s / 11 h 48 m 52 s ETA: 0 s (saved)
+Max score of dev is 83.54% at epoch 30
+Average time of each epoch is 23 m 38 s
+11 h 48 m 52 s elapsed

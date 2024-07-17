@@ -1,0 +1,41 @@
+{
+  "batch_size": 32,
+  "epochs": 3,
+  "run_eagerly": false,
+  "finetune": null,
+  "transformer": "uer/albert-base-chinese-cluecorpussmall",
+  "optimizer": {
+    "class_name": "AdamWeightDecay",
+    "config": {
+      "name": "AdamWeightDecay",
+      "clipnorm": 1.0,
+      "learning_rate": {
+        "class_name": "PolynomialDecay",
+        "config": {
+          "initial_learning_rate": 5e-05,
+          "decay_steps": 291015,
+          "end_learning_rate": 0.0,
+          "power": 1.0,
+          "cycle": false,
+          "name": null
+        }
+      },
+      "decay": 0.0,
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1e-08,
+      "amsgrad": false,
+      "weight_decay_rate": 0
+    }
+  },
+  "learning_rate": 5e-05,
+  "weight_decay_rate": 0,
+  "epsilon": 1e-08,
+  "clipnorm": 1.0,
+  "warmup_steps_ratio": 0,
+  "use_amp": false,
+  "max_seq_length": 128,
+  "metrics": "accuracy",
+  "warmup_steps": 0,
+  "train_steps": 291015
+}

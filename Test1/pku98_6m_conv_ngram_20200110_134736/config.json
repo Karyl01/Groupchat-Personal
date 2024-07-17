@@ -1,0 +1,48 @@
+{
+  "use_char": false,
+  "run_eagerly": true,
+  "epochs": 100,
+  "batch_size": 100,
+  "metrics": "f1",
+  "optimizer": {
+    "class_name": "Adam",
+    "config": {
+      "name": "Adam",
+      "clipnorm": 5,
+      "learning_rate": 0.001,
+      "decay": 0.0,
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1e-08,
+      "amsgrad": false
+    }
+  },
+  "loss": null,
+  "weight_norm": true,
+  "dropout_hidden": 0.2,
+  "dropout_embed": 0.2,
+  "filters": [
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "kernel_size": 3,
+  "window_size": 0,
+  "embedding_trainable": true,
+  "ngram_embed": 50,
+  "word_embed": {
+    "class_name": "HanLP>Word2VecEmbedding",
+    "config": {
+      "trainable": false,
+      "filepath": "https://file.hankcs.com/hanlp/embeddings/radical_char_vec_20191229_013849.zip#character.vec.txt",
+      "expand_vocab": true,
+      "lowercase": false,
+      "vocab": "<hanlp.common.vocab.Vocab object at 0x7fe0651919e8>"
+    }
+  },
+  "early_stopping_patience": 5,
+  "train_steps": 712600,
+  "map_word_feature": true
+}
